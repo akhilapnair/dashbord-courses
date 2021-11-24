@@ -1,0 +1,91 @@
+<div class="mainpage">
+  <mat-toolbar class="toolbar">
+    <div>
+
+    </div>
+    <div class="dept">
+      <div class="item">
+        <span class="material-icons ">
+          home
+        </span>
+        <span for="A">Home</span>
+      </div>
+      <div class="item">
+        <span class="material-icons ">
+          calendar_today
+        </span>
+        Calander
+      </div>
+      <div class="item">
+        <span class="material-icons ">
+          library_books
+        </span>
+        Courses
+      </div>
+</div>
+  <div class="search-container">
+
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+  
+  <!-- <div class="search-container">
+    <input type="text" id="search-bar" placeholder="What can I help you with today?">
+    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  </div> -->
+</div>
+
+
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+      <div class="nav">
+        <!-- <input type="checkbox" id="menu"/> -->
+        <!-- <label for="menu" id="nav-icon">&#9776;</label> -->
+
+
+        <div class="multi-level">
+          <div class="item">
+            <span class="material-icons icon">
+              home
+            </span>
+            <label for="A">Home</label>
+          </div>
+          <div class="item">
+            <span class="material-icons icon">
+              calendar_today
+            </span>
+
+            <label for="B">Calendar</label>
+          </div>
+          <div class="item">
+            <span class="material-icons icon">
+              library_books
+            </span>
+            <input type="checkbox" id="C" />
+            <span class="material-icons arrow">
+              expand_less
+            </span>
+            <label for="C"> Courses</label>
+
+            <!-- <img src="assets/Arrow.png" class="arrow"><label for="C">Courses</label> -->
+
+            <ul>
+              <li><a href="#">Fundamentals of computing</a></li>
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">Ds Lab</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content-wrapper">
+        <app-bread-crumb></app-bread-crumb>
+        <router-outlet></router-outlet>
+        <!-- <app-course></app-course> -->
+      </div>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

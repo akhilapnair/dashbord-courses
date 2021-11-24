@@ -1,0 +1,67 @@
+.nav-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+.nav-tabs:after {
+    content:"";
+    clear: both;
+    display: block;
+    height: 300px;
+}
+.nav-tabs li {
+    display: inline-block;
+}
+.nav-tabs li > input {
+    display: none;
+}
+.nav-tabs li > label {
+    display: inline-block;
+    border: none;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+}
+.nav-tabs li:last-child > label {
+    border-right-width: 1px;
+}
+.nav-tabs .nav-tab-content {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    // padding: 20px;
+    height: 200px;
+    text-align: left;
+    // border-top: 1px solid #f66511;
+}
+.nav-tab-content li {
+    display: list-item;
+}
+/* Functional */
+ .nav-tabs li > input:checked + label {
+    /* background-color: #2251a4; */
+    border-bottom:2px solid;
+    color:orange;
+}
+.nav-tabs li > input:checked ~ .nav-tab-content {
+    display: block;
+}
+.card--wrap{
+    padding: 10px 0px;
+    .assignment{
+        display: flex;
+        justify-content: space-between;
+        &--right{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+}

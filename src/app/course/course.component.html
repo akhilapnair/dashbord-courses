@@ -1,0 +1,77 @@
+<h5>Fundamentals of Programming</h5>
+
+<ul class="nav-tabs">
+    <li>
+        <input checked="checked" id="tab-1" name="tabs" type="radio" />
+        <label for="tab-1"><span class="material-icons">
+                folder
+            </span>
+        </label>
+        <div class="nav-tab-content">
+            <mat-form-field appearance="fill">
+                <mat-label>All Assignments</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let val of course" >
+                        {{val.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <ng-container *ngFor="let i of [0,1,2,3,4,5,6]">
+                <div class="card--wrap">
+                    <mat-card>
+                        <div class="assignment">
+                            <div>
+                                Assignment
+                            </div>
+                            <div class="assignment--right">
+                                <div>
+                                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                                    
+                                </div>
+                                <div>
+                                    two
+                                </div>
+                                <div>
+                                    two
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </mat-card>
+
+                </div>
+
+            </ng-container>
+        </div>
+    </li>
+    <li>
+        <input id="tab-2" name="tabs" type="radio" />
+        <label for="tab-2"><span class="material-icons">
+                post_add
+            </span>
+        </label>
+        <div class="nav-tab-content">
+            dd
+        </div>
+
+    </li>
+    <li>
+        <input id="tab-3" name="tabs" type="radio" />
+        <label for="tab-3"> <span class="material-icons">
+                groups
+            </span></label>
+        <div class="nav-tab-content">
+            ss
+        </div>
+    </li>
+    <li>
+        <input id="tab-4" name="tabs" type="radio" />
+        <label for="tab-4"><span class="material-icons">
+                forum
+            </span></label>
+        <div class="nav-tab-content">
+            sadad
+        </div>
+    </li>
+</ul>

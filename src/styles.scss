@@ -1,0 +1,26 @@
+@import 'material-icons/iconfont/material-icons.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  .mat-drawer{
+      width:20%;
+      background-color: #ffff;
+    // let's take mat-toolbar's default theme
+    // ref: https://github.com/angular/material2/blob/88601fa51d581f538468a9b63890b0e285e519cb/src/lib/toolbar/_toolbar-theme.scss#L39
+    // background-color: mat-color($background, app-bar);
+    // color: mat-color($foreground, text);
+
+    //
+  }
+  mat-toolbar{
+    min-height:64px;
+    max-height:64px
+   }
+   .mat-tab-labels{
+     display: flex!important;
+    justify-content: center;
+}
+.mat-card{
+  background-color: #ffff;
+}
